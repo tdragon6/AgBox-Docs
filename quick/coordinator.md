@@ -9,7 +9,7 @@
 
 ## 同步协调器
 `同步协调器` 模拟人类真实调度各个数字员工协作的场景，用一个简单自实现的 `loop` 来模拟人类多次指挥AI直到任务完成的全过程
-![](/AgBox-Docs/images/quick/coordinator/sync_coordinator_workflow.png)
+<Image src="/AgBox-Docs/images/quick/coordinator/sync_coordinator_workflow.png" />
 ### 概述
 - 所处位置：
     - Agents 目录：`store/coordinator/agbox-coordinator-sync`
@@ -427,7 +427,7 @@
 
 ## 异步协调器
 `异步协调器` 接收用户需求，规划任务，处理任务依赖关系，并委派给对应的数字员工执行（通过 `agbox-assign-task` 技能实现），同时处理 git `worktrees` 分支合并相关问题，与 `同步协调器` 的区别是：`异步协调器` 会根据任务情况自动处理任务执行的先后顺序和依赖关系，并行委派执行没有依赖关系的任务
-![](/AgBox-Docs/images/quick/coordinator/async_coordinator_workflow.png)
+<Image src="/AgBox-Docs/images/quick/coordinator/async_coordinator_workflow.png" />
 ### 概述
 - 所处位置：`store/coordinator/agbox-coordinator-async`
 - 包含两个 `skills`：`planning-with-files` 和 `agbox-assign-task`（委派数字员工技能）

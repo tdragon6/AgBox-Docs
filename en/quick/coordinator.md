@@ -9,7 +9,7 @@ This document introduces the working principles of two coordinators: the `Synchr
 
 ## Synchronous Coordinator
 The `Synchronous Coordinator` simulates the scenario where humans actually schedule various digital employees to collaborate, using a simple self-implemented `loop` to simulate the entire process of humans directing AI multiple times until the task is completed.
-![](/AgBox-Docs/images/quick/coordinator/sync_coordinator_workflow_en.png)
+<Image src="/images/quick/coordinator/sync_coordinator_workflow_en.png" />
 ### Overview
 - Location:
     - Agents directory: `store/coordinator/agbox-coordinator-sync`
@@ -427,7 +427,7 @@ Example: `Implement a simple front-end and back-end separated library management
 
 ## Asynchronous Coordinator
 The `Asynchronous Coordinator` receives user requirements, plans tasks, manages task dependencies and execution order, and delegates them to corresponding digital employees for execution (implemented through the `agbox-assign-task` skill), while handling git `worktrees` branch merging issues. The difference from the `Synchronous Coordinator` is: the `Asynchronous Coordinator` will automatically handle the execution order and dependency relationships of tasks based on the task situation, and delegate tasks without dependencies for parallel execution.
-![](/AgBox-Docs/images/quick/coordinator/async_coordinator_workflow_en.png)
+<Image src="/images/quick/coordinator/async_coordinator_workflow_en.png" />
 ### Overview
 - Location: `store/coordinator/agbox-coordinator-async`
 - Contains two `skills`: `planning-with-files` and `agbox-assign-task` (delegate digital employee skill)

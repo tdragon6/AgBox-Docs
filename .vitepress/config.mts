@@ -5,7 +5,7 @@ export default defineConfig({
   title: "AgBox 使用文档",
   description: "AgBox OPC Documents",
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/images/logo.svg' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/AgBox-Docs/images/logo.svg' }],
   ],
   lastUpdated: true,
   locales: {

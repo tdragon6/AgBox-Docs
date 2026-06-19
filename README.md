@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://tdragon6.github.io/AgBox-Docs/images/logo.svg" width="200px" alt="AgBox">
+  <img src="https://tdragon6.github.io/AgBox-Docs/images/logo.svg" width="60px" alt="AgBox">
 </h1>
 
 <h4 align="center">AgBox 使用文档</h4>

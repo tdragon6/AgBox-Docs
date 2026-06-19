@@ -11,4 +11,4 @@
 ## LICENSE
 `AgBox-Docs` 使用 [MIT License](https://github.com/tdragon6/AgBox-Docs/blob/main/LICENSE)
 
-查看 `AgBox-Docs` 引用的第三方开源软件许可证 [third_party_license](https://github.com/tdragon6/AgBox-Docs/blob/main/THIRD_PARTY_LICENSES.md)
+查看 `AgBox-Docs` 引用的第三方开源软件许可证 [third_party_licenses](https://github.com/tdragon6/AgBox-Docs/blob/main/THIRD_PARTY_LICENSES.md)

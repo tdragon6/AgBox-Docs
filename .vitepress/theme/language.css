@@ -1,0 +1,4 @@
+.vp-doc div[class*="language-"] pre {
+  max-height: 50vh;
+  overflow-y: auto;
+}

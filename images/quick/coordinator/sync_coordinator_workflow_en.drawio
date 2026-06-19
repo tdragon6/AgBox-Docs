@@ -1,0 +1,88 @@
+<mxfile host="Electron" agent="Trae drawio-skill">
+  <diagram id="sync-coordinator-workflow-v3" name="Synchronous Coordinator Workflow">
+    <mxGraphModel dx="2111" dy="1245" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1060" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffaf0;strokeColor=#d6c2a6;dashed=1;sketch=1;strokeWidth=2;arcSize=3;" value="" vertex="1">
+          <mxGeometry height="1130" width="2050" x="30" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=26;fontStyle=1;fontColor=#5f3b1b;" value="Synchronous Coordinator: Self-implemented Loop Simulating Human Multi-turn AI Direction" vertex="1">
+          <mxGeometry height="44" width="1165" x="487.5" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="inputSpec" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5e6d3;strokeColor=#8b7355;sketch=1;strokeWidth=2;fontSize=14;fontStyle=1;fontColor=#4f3d27;align=left;spacingLeft=12;" value="Coordinator Input JSON&lt;br&gt;&lt;font style=&quot;font-size:12px&quot;&gt;name: null=user message; employee name=employee reply&lt;br&gt;message: user message or employee reply content&lt;/font&gt;" vertex="1">
+          <mxGeometry height="105" width="360" x="150" y="563" as="geometry" />
+        </mxCell>
+        <mxCell id="outputSpec" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6d7e8;strokeColor=#7b4397;sketch=1;strokeWidth=2;fontSize=14;fontStyle=1;fontColor=#4e235f;align=left;spacingLeft=12;" value="Coordinator Output JSON&lt;br&gt;&lt;font style=&quot;font-size:12px&quot;&gt;name: null=reply to user; employee name=assign to that employee&lt;br&gt;message: reply content or task content&lt;br&gt;finished: whether current user task is complete&lt;/font&gt;" vertex="1">
+          <mxGeometry height="125" width="360" x="150" y="802.5" as="geometry" />
+        </mxCell>
+        <mxCell id="user" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5e6d3;strokeColor=#8b7355;sketch=1;strokeWidth=2;fontSize=14;fontColor=#4f3d27;" value="&lt;b&gt;User submits natural language request&lt;/b&gt;" vertex="1">
+          <mxGeometry height="78" width="210" x="75" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="wrapUser" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5e6d3;strokeColor=#8b7355;sketch=1;strokeWidth=2;fontSize=14;fontColor=#4f3d27;" value="&lt;b&gt;Wrap as coordinator JSON input&lt;br&gt;&lt;font style=&quot;font-size:12px&quot;&gt;{ name:null, message:user request }&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="78" width="245" x="350" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="loopZone" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe4b5;strokeColor=#b8651e;dashed=1;sketch=1;strokeWidth=2;fontSize=16;fontStyle=1;fontColor=#633812;verticalAlign=top;spacingTop=10;" value="Self-implemented loop: continuously feed &quot;previous round results&quot; to the coordinator" vertex="1">
+          <mxGeometry height="940" width="820" x="640" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="coordIn" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff4cc;strokeColor=#b8901a;sketch=1;strokeWidth=2;fontSize=14;fontColor=#5b4508;" value="&lt;b&gt;Current Round Input&lt;br&gt;&lt;font style=&quot;font-size:12px&quot;&gt;input JSON&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="66" width="170" x="690" y="356" as="geometry" />
+        </mxCell>
+        <mxCell id="coordinator" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe4b5;strokeColor=#b8651e;sketch=1;strokeWidth=2;fontSize=14;fontStyle=1;fontColor=#633812;" value="Synchronous Coordinator&lt;br&gt;&lt;font style=&quot;font-size:12px&quot;&gt;Identify requirements / Plan tasks / Coordinate context&lt;br&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="86" width="220" x="960" y="346" as="geometry" />
+        </mxCell>
+        <mxCell id="coordOut" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6d7e8;strokeColor=#7b4397;sketch=1;strokeWidth=2;fontSize=14;fontColor=#4e235f;" value="&lt;b&gt;Current Round Output&lt;br&gt;&lt;font style=&quot;font-size:12px&quot;&gt;output JSON&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size:12px&quot;&gt;&lt;span style=&quot;color: rgb(99, 56, 18);&quot;&gt;&lt;b&gt;Next round message (delegation or task end)&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="93" width="240" x="950" y="497" as="geometry" />
+        </mxCell>
+        <mxCell id="decision" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff4cc;strokeColor=#b8901a;sketch=1;strokeWidth=2;fontSize=14;fontStyle=1;fontColor=#5b4508;" value="name is null?" vertex="1">
+          <mxGeometry height="92" width="115" x="1012.5" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="workerPool" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#def0dc;strokeColor=#5c8a49;sketch=1;strokeWidth=2;fontSize=14;fontStyle=1;fontColor=#315426;align=left;spacingLeft=14;" value="Digital employees execute&lt;br&gt;&lt;font style=&quot;font-size:12px&quot;&gt;back → front → test ...&lt;br&gt;Each only receives tasks assigned by coordinator&lt;br&gt;Employees session/context/memory are independent&lt;/font&gt;" vertex="1">
+          <mxGeometry height="150" width="285" x="927.5" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="wrapWorker" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#def0dc;strokeColor=#5c8a49;sketch=1;strokeWidth=2;fontSize=14;fontColor=#315426;" value="&lt;b&gt;Employees reply wrapped again&lt;br&gt;&lt;font style=&quot;font-size:12px&quot;&gt;{ name:&quot;back&quot;, message:execution result }&lt;br&gt;As next round coordinator input&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="325" x="907.5" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="final" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6d7e8;strokeColor=#7b4397;sketch=1;strokeWidth=2;fontSize=14;fontStyle=1;fontColor=#4e235f;" value="Reply to user and end&lt;br&gt;&lt;font style=&quot;font-size:12px&quot;&gt;{ name:null, message:summary, finished:true }&lt;/font&gt;" vertex="1">
+          <mxGeometry height="82" width="285" x="1625" y="645" as="geometry" />
+        </mxCell>
+        <mxCell id="formatFix" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcdbf;strokeColor=#a53d3d;sketch=1;strokeWidth=2;fontSize=13;fontColor=#6b2222;align=left;spacingLeft=12;" value="&lt;b&gt;Format fixing occurs at the loop scheduling layer&lt;br&gt;&lt;font style=&quot;font-size:12px&quot;&gt;If employee/&lt;/font&gt;&lt;/b&gt;&lt;b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;coordinator&lt;/font&gt;&lt;/b&gt;&lt;b&gt;&lt;font style=&quot;font-size:12px&quot;&gt;&amp;nbsp;outputs non-compliant JSON, callback to the previous party for review and correction&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="92" width="420" x="1557.5" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="rounds" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b8651e;dashed=1;sketch=1;strokeWidth=2;fontSize=13;fontColor=#5f3b1b;align=left;spacingLeft=14;" value="&lt;b&gt;Multi-turn simulated manual scheduling example&lt;br&gt;&lt;font style=&quot;font-size:12px&quot;&gt;Round 1: User request → Coordinator outputs name=back&lt;br&gt;Round 2: back result → Coordinator outputs name=front&lt;br&gt;Round 3: front result → Coordinator outputs name=test&lt;br&gt;Round 4: test result → Coordinator outputs name=null, finished=true&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="125" width="475" x="1530" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="user" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;sketch=1;strokeWidth=2;strokeColor=#8b7355;endArrow=classic;endFill=1;" target="wrapUser" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="wrapUser" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;sketch=1;strokeWidth=2;strokeColor=#8b7355;endArrow=classic;endFill=1;" target="coordIn" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="coordIn" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;sketch=1;strokeWidth=2;strokeColor=#b8901a;endArrow=classic;endFill=1;" target="coordinator" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="coordinator" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;sketch=1;strokeWidth=2;strokeColor=#7b4397;endArrow=classic;endFill=1;" target="coordOut" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="coordOut" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;sketch=1;strokeWidth=2;strokeColor=#7b4397;endArrow=classic;endFill=1;" target="decision" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="decision" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;sketch=1;strokeWidth=2;strokeColor=#5c8a49;endArrow=classic;endFill=1;fontSize=12;" target="workerPool" value="&lt;b&gt;No: name=employee name&lt;/b&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="workerPool" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;sketch=1;strokeWidth=2;strokeColor=#5c8a49;endArrow=classic;endFill=1;" target="wrapWorker" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="decision" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;sketch=1;strokeWidth=2;strokeColor=#7b4397;endArrow=classic;endFill=1;fontSize=12;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="final" value="&lt;b&gt;Yes: name=null&lt;/b&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wKc3MUtMvauFswb1nLbj-1" edge="1" parent="1" source="wrapWorker" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;sketch=1;strokeWidth=2;strokeColor=#5c8a49;endArrow=classic;endFill=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="coordIn" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="740" as="sourcePoint" />
+            <mxPoint x="790" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

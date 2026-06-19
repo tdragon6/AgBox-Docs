@@ -10,7 +10,7 @@
 - 右侧为已选择项目对应的 `任务列表`、`任务消息`、`模型消耗` 内容，可通过Tab页切换
 
 ## 搜索排序
-- 搜索和排序参考 [会话任务 - 搜索排序](/usage/dashboard/tasks/session#搜索排序)
+- 搜索和排序参考 [会话任务 - 搜索排序](/usage/tasks/session#搜索排序)
 - 搜索增加支持 `任务类型` 和 `员工名称` 字段，均可多选
 <Image src="/AgBox-Docs/images/usage/tasks/project/tasks_project_task_search_task_type.png" />
 <Image src="/AgBox-Docs/images/usage/tasks/project/tasks_project_task_search_robots_select.png" />

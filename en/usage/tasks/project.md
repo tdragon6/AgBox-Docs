@@ -10,7 +10,7 @@ Refer to [Field Description - Task List](/en/usage/key#task-list)
 - The right side displays the `Task List`, `Task Message`, and `Model Consumption` content of the selected project, switchable via tabs.
 
 ## Search & Sort
-- For search and sorting, refer to [Session Task - Search & Sort](/en/usage/dashboard/tasks/session#search-sort).
+- For search and sorting, refer to [Session Task - Search & Sort](/en/usage/tasks/session#search-sort).
 - Search additionally supports `Task Type` and `Employee Name` fields, both support multiple selection.
 <Image src="/AgBox-Docs/images/usage/tasks/project/tasks_project_task_search_task_type.png" />
 <Image src="/AgBox-Docs/images/usage/tasks/project/tasks_project_task_search_robots_select.png" />

@@ -11,4 +11,4 @@
 ## LICENSE
 `AgBox-Docs` is licensed under the [MIT License](https://github.com/tdragon6/AgBox-Docs/blob/main/LICENSE)
 
-View third-party open-source software licenses referenced by `AgBox-Docs` at [third_party_licenses](https://github.com/tdragon6/AgBox-Docs/blob/main/THIRD_PARTY_LICENSES.md)
+View third-party open-source software licenses referenced by `AgBox-Docs` at [THIRD_PARTY_LICENSES.md](https://github.com/tdragon6/AgBox-Docs/blob/main/THIRD_PARTY_LICENSES.md)

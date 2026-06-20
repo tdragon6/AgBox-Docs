@@ -12,14 +12,14 @@
 - 支持按 `员工名称`、`员工部门`、`员工等级`、`员工品质`、`员工作者`、`创建时间` 和 `更新时间` 字段排序
 
 ## 新建员工
-填写相应字段并选择已有模型配置即可创建
+填写相应字段并选择已有模型配置即可创建，模型配置支持搜索
 - `推理程度`：`none`、`minimal`、`low`、`medium`、`high`、`xhigh`，模型推理程度从左至右逐渐增加
 - `最大轮数`：设置Agent Loop时调用工具的最大轮数
 - 同名数字员工无法创建
 <Image src="/AgBox-Docs/images/usage/robots/manage/robots_manage_create.png" />
 
 ## 导入员工
-导入数字员工分为 `本地导入` 和 `从 Github 导入` 两种，选择已有模型配置后即可导入
+导入数字员工分为 `本地导入` 和 `从 Github 导入` 两种，选择已有模型配置后即可导入，模型配置支持搜索
 - 同名的数字员工无法导入，导入覆盖行为、格式错误的数字员工和导入时是否安装Hermes官方技能根据 [系统设置 - 数字员工](/usage/settings.md#数字员工) 中的配置决定导入行为
 - `本地导入`：从本地上传数字员工压缩包文件导入，仅支持 `zip` 格式，自动识别压缩包内所有符合格式的数字员工
 <Image src="/AgBox-Docs/images/usage/robots/manage/robots_manage_import_local.png" />

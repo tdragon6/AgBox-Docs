@@ -6,7 +6,7 @@ This page provides digital employee marketplace search and installation. The rel
 Click the repository address in each record in the table to access the repository address where the source digital employee is hosted.
 
 ## Install Employee
-Click install to directly download the digital employee to local. After successful installation, it will be displayed in `Employee Management`. Digital employees with the same name or incorrect format cannot be installed.
+Click install and select an existing model configuration to directly download the digital employee to local, model configuration support search. After successful installation, it will be displayed in `Employee Management`. Digital employees with the same name or incorrect format cannot be installed.
 
 ## Community Ecosystem
 Refer to [Community Ecosystem](/en/quick/community)

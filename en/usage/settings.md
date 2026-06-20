@@ -3,7 +3,7 @@ This page provides complete system settings.
 <Image src="/AgBox-Docs/images/usage/settings/settings.png" />
 
 ## Coordinator Model Configuration
-Set the models used by the two coordinators through existing model configurations.
+Set the models used by the two coordinators through existing model configurations, model configuration support search.
 
 ## Skill List
 - `Overwrite Existing Skills`: Whether to overwrite existing skills when importing skills. Default value is `Intercept`.

@@ -12,14 +12,14 @@ Refer to [Field Description - Digital Employee](/en/usage/key#digital-employee)
 - Supports sorting by `Employee Name`, `Employee Department`, `Employee Rank`, `Employee Quality`, `Employee Author`, `Creation Time`, and `Update Time` fields.
 
 ## Create Employee
-Fill in the corresponding fields and select an existing model configuration to create.
+Fill in the corresponding fields and select an existing model configuration to create, model configuration support search.
 - `Reasoning Level`: `none`, `minimal`, `low`, `medium`, `high`, `xhigh`. Model reasoning level gradually increases from left to right.
 - `Max Rounds`: Set the maximum number of rounds for tool calls in the Agent Loop.
 - Digital employees with the same name cannot be created.
 <Image src="/AgBox-Docs/images/usage/robots/manage/robots_manage_create.png" />
 
 ## Import Employee
-Importing digital employees is divided into `Local Import` and `Import from Github`. Select an existing model configuration to import.
+Importing digital employees is divided into `Local Import` and `Import from Github`. Select an existing model configuration to import, model configuration support search.
 - Digital employees with the same name cannot be imported. Import overwrite behavior, incorrectly formatted digital employees, and whether to install Hermes official skills during import are determined by the configuration in [System Settings - Digital Employee](/en/usage/settings.md#digital-employee).
 - `Local Import`: Upload digital employee archive files from local to import. Only `zip` format is supported. All digital employees that conform to the format in the archive will be automatically identified.
 <Image src="/AgBox-Docs/images/usage/robots/manage/robots_manage_import_local.png" />
